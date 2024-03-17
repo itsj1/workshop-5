@@ -3,6 +3,7 @@ import { startConsensus } from "./nodes/consensus";
 import { Value } from "./types";
 import { delay } from "./utils";
 
+
 async function main() {
   const faultyArray = [
     true,
@@ -38,6 +39,7 @@ async function main() {
   await delay(200);
 
   await startConsensus(initialValues.length);
+
 }
 
 main();
